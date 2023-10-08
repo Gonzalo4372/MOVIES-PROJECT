@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+}
+
+.ContainerHeader {
+  width: 100%;
+  height: 15vh;
+  background-image: url("../../assets/Header\ prueba\ 1.jpg");
+  display: flex;
+
+  justify-content: space-evenly;
+
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+
+}
+
+.InputSearch {
+
+    height: 3.5vh;
+    
+    width: 260px;
+
+}
+
+.input {
+
+    height: 85%;
+
+
+}
+
+
+.buttonSearch{
+
+     height: 100%;
+     width: 70px;
+     background-color: red;
+     color: white;
+     cursor: pointer;
+     border: none;
+     border-radius: 5px;
+
+}
+
+.buttonSearch:hover{
+      
+    background-color: white;
+    color: red;
+
+}
+
+
+
+
+.Selects {
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px;
+   
+}
+
+.newResetMovie {
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+}
+
+.buttonNew,.buttonReset{
+    width: 60px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+
+.buttonNew:hover,.buttonReset:hover{
+
+
+    background-color: white;
+    color: red;
+
+
+
+
+}
+
+
+
+
+
+.select1, .select2 {
+
+  
+    width: 150px;
+
+
+}

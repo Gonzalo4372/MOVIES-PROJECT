@@ -1,0 +1,66 @@
+*{
+    margin:0;
+}
+
+
+.LandingPageFondo {
+
+    background-image: url("../../assets/pngtree-4k-popcorn-box-animated-in-3d-picture-image_2738502.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.ContainerHome{
+
+ display: flex;
+
+ justify-content: space-evenly;
+ width: 20vw;
+ height: 20vh;
+flex-direction: column;
+align-items: center;
+
+}
+
+
+.buttonhome {
+
+  border-radius: 10px;
+  height: 4vh;
+   width: 5vw;
+ 
+  border: solid white;
+  font-size: 1.4rem;
+  color: white;
+  background: linear-gradient(180deg, #23b6c0 0%, #149ef3 49%, #d83019 50%, #f00b0b 100%);
+  background-size: 1px 100px;
+  transition: all .3s;
+}
+
+.buttonhome:hover{
+
+
+
+ cursor: pointer;
+ background-position: 0 -50px;
+ transition: all .3s;
+
+
+}
+
+.TopRate {
+
+
+
+ 
+ text-shadow: 2px 2px rgb(255, 255, 255);
+
+
+}
