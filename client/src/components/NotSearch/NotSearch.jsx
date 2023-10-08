@@ -8,7 +8,20 @@ const NotSearch = () => {
 
 
 
-
+    return ( <>
+    
+    
+    
+           <h1>Está cargando</h1>
+    
+    
+    
+    
+    
+    
+    
+    
+    </>)
 
 
 

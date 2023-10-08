@@ -3,9 +3,11 @@ import Header from "../Header/Header";
 import style from "./Home.module.css"
 import Pagination from "../Pagination/Pagination";
 import MovieCards from "../MovieCards/MovieCards";
-import { useSelector, useDispatch } from "react-redux/es/hooks/useSelector";
+import { useDispatch, useSelector } from "react-redux";
 import { getAllMovies } from "../../redux/action";
 import LoadingPage  from "../LoadingPage/LoadingPage";
+import { useState, useEffect } from "react";
+
 
 const Home = () => {
 

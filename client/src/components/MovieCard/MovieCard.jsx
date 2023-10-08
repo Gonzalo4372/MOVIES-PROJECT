@@ -1,6 +1,6 @@
 
 import { useDispatch } from "react-redux";
-import { deleteMovie } from "../../redux/actions";
+import { deleteMovie } from "../../redux/action";
 import { Link } from "react-router-dom";
 import style from "./MovieCard.module.css"
 
@@ -28,11 +28,11 @@ const MovieCard = ({ id, title, image, genres, popularity }) => {
     <div className={style.containerCard}>
       {isDB() && (
         <div className={style.movieButtons}>
-          <button className="buttonCardDelete" onClick={(e)=>handleDelete(e)}>
+          <button className={style.buttonCardDelete} onClick={(e)=>handleDelete(e)}>
             X
           </button>
           <Link className={style.linkCardEdit} to={`/edit/${id}`}>
-            <button className="buttonCardEdit">EDIT</button>
+            <button className={style.buttonCardEdit}>EDIT</button>
           </Link>
         </div>
       )}
