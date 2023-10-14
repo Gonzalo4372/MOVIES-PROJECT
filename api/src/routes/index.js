@@ -5,7 +5,7 @@ const mainRouter = Router();
 
 
 
-mainRouter.use("/Movies", MoviesRouter);
+mainRouter.use("/movies", MoviesRouter);
 
 
 

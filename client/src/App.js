@@ -1,13 +1,12 @@
 import { Route, Routes} from "react-router-dom";
 import Home from "./components/Home/Home.jsx"
 import LandingPage from "./components/LandingPage/LandingPage";
-import axios from "axios";
 import NotFound from "./components/NotFound/NotFound.jsx";
 import MovieDetail from "./components/MovieDetail/MovieDetail.jsx";
 import Form from "./components/Form/Form.jsx";
 import EditMovie from "./components/EditMovie/EditMovie.jsx";
+import axios from "axios";
 axios.defaults.baseURL = "https://movies-project-gonzalo-albornoz.onrender.com/"
-
 
 
 function App() {

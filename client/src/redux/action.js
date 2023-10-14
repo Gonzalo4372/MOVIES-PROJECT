@@ -13,32 +13,26 @@ export const ORDER = "ORDER";
 
 
 
+export const getAllMovies = (setLoading) => {
+  setLoading(true);
+  console.log(axios)
+  return function (dispatch) {
+    axios
+      .get(`/Movies`)
+      .then((response) => {
+        return console.log(response.data);
+      })
+      .then((data) => {
+        return dispatch({ type: GET_ALL_MOVIES, payload: data });
+      })
+      .catch((error) => console.log(new Error(error)))
+      .finally(() => setLoading(false));
+  };
+};
 
 
- export const getAllMovies = (setLoading) => {
-
-    setLoading(true);
 
 
-    return function (dispatch){
-
-    axios.get("/movies")
-    .then((response) => {
-    return response.data;
-
-    })
-    .then((data) => {
-
-    return dispatch({type: GET_ALL_MOVIES, payload: data});
-    })
-    .catch((error) => console.log (new Error (error)))
-    .finally(() => setLoading(false));
-    
-
-
-    }
-
- }
 
 
  export const getAllMoviesFilter = (input,setPaginate) => {
